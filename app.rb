@@ -21,7 +21,7 @@ class App < Sinatra::Base
   get '/set' do
     # set the :foo key of the session hash equal to 'hello' here!
 
-    session[:foo] = "hello"
+    session[:foo] = "hello" # we have added key :foo with a value of "hello" to the session hash.
     if session[:foo] == 'hello'
       binding.pry
       redirect '/fetch'
